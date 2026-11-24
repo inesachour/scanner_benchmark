@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'scanners/cunning_scan.dart';
 
-enum NoteLevel { info, warning, danger }
+enum NoteLevel { warning, danger }
 
 class PackageNote {
   final NoteLevel level;
@@ -37,7 +37,7 @@ class ScannerPackage {
 
   /// Most severe note level, used for the card's accent colour.
   NoteLevel get worstLevel {
-    var worst = NoteLevel.info;
+    var worst = NoteLevel.warning;
     for (final n in notes) {
       if (n.level.index > worst.index) worst = n.level;
     }
