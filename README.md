@@ -9,11 +9,12 @@ The home screen has one button per package. Each card shows the package's engine
 | Package | Engine | Platforms | Notes |
 |---|---|---|---|
 | [cunning_document_scanner](https://pub.dev/packages/cunning_document_scanner) | ML Kit (Android), VisionKit (iOS) | Android, iOS | Native UI, no customization. |
-| [google_mlkit_document_scanner](https://pub.dev/packages/google_mlkit_document_scanner) | Google ML Kit Document Scanner | Android only | pub.dev tags iOS too, but its docs say the feature is still in beta and currently Android only. |
 | [flutter_doc_scanner](https://pub.dev/packages/flutter_doc_scanner) | ML Kit (Android), VisionKit (iOS) | Android, iOS | Can return a PDF. |
 | [document_scanner_flutter](https://pub.dev/packages/document_scanner_flutter) | Older native wrappers | Android, iOS (unverified) | May be abandoned. It may not build on current Flutter or Android versions. |
 | [doc_scan_flutter](https://pub.dev/packages/doc_scan_flutter) | ML Kit (Android), VisionKit (iOS) | Android, iOS | Unverified publisher and few likes. |
 | [document_scan](https://pub.dev/packages/document_scan) | Apple Vision (iOS), OpenCV (Android) | Android, iOS | Headless, so there is no UI. Young package with low adoption. |
+
+`google_mlkit_document_scanner` was dropped from the list because its document scanner is Android only.
 
 pub.dev stats were checked on 2026-11-24. Some packages have not been checked yet. The cards say so.
 

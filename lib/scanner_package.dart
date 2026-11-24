@@ -62,24 +62,6 @@ const scannerPackages = <ScannerPackage>[
     onScan: scanWithCunning,
   ),
   ScannerPackage(
-    name: 'google_mlkit_document_scanner',
-    pubUrl: 'https://pub.dev/packages/google_mlkit_document_scanner',
-    engine: 'Google ML Kit Document Scanner (Play services)',
-    platforms: 'Android only (pub.dev tags iOS too)',
-    stats: 'v0.7.2 · 160 pts · 73 likes · 29.7k downloads · verified publisher',
-    notes: [
-      PackageNote(
-        NoteLevel.danger,
-        'This feature is still in beta and currently available on '
-        'Android only.',
-      ),
-      PackageNote(
-        NoteLevel.warning,
-        'Not maintained by Google (third-party plugin), beta API.',
-      ),
-    ],
-  ),
-  ScannerPackage(
     name: 'flutter_doc_scanner',
     pubUrl: 'https://pub.dev/packages/flutter_doc_scanner',
     engine: 'ML Kit (Android) / VisionKit (iOS)',
