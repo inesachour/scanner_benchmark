@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scanner_benchmark/scanners/flutter_doc_scan.dart';
 import 'scanners/cunning_scan.dart';
 
 enum NoteLevel { warning, danger }
@@ -73,6 +74,7 @@ const scannerPackages = <ScannerPackage>[
         'Verify publisher, maintenance and likes on pub.dev.',
       ),
     ],
+    onScan: scanWithFlutterDocScanner,
   ),
   ScannerPackage(
     name: 'document_scanner_flutter',
