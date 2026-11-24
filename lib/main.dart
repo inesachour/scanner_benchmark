@@ -191,7 +191,6 @@ class _NoteTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (icon, color) = switch (note.level) {
-      NoteLevel.info => (Icons.info_outline, Colors.blueGrey),
       NoteLevel.warning => (Icons.warning_amber_rounded, Colors.orange),
       NoteLevel.danger => (Icons.error_outline, Colors.red),
     };
@@ -210,10 +209,10 @@ class _NoteTile extends StatelessWidget {
           Expanded(
             child: Text(
               note.text,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodySmall
-                  ?.copyWith(height: 1.35, color: const Color(0xff333333)),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                height: 1.35,
+                color: const Color(0xff333333),
+              ),
             ),
           ),
         ],
