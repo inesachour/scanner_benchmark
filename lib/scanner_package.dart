@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scanner_benchmark/scanners/doc_scan_flutter_scan.dart';
 import 'package:scanner_benchmark/scanners/flutter_doc_scan.dart';
 import 'scanners/cunning_scan.dart';
 
@@ -108,6 +109,7 @@ const scannerPackages = <ScannerPackage>[
         'Output files go to the temp folder; they must be moved to keep.',
       ),
     ],
+    onScan: scanWithDocScanFlutter,
   ),
   ScannerPackage(
     name: 'document_scan',
